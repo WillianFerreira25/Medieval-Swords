@@ -1,0 +1,109 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmx6nrjblcdut"]
+
+[ext_resource type="Texture2D" uid="uid://djwv7cx1t7s2h" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Yellow/Warrior_Yellow.png" id="1_kbgvk"]
+[ext_resource type="PackedScene" uid="uid://c0h43eqfhpoxb" path="res://Player/player.tscn" id="2_pcc4f"]
+[ext_resource type="PackedScene" uid="uid://csumgeh27kd3a" path="res://enemies/pawn.tscn" id="3_3i1l7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_h02l3"]
+line_spacing = 70.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WarriorYellow" type="Sprite2D" parent="."]
+position = Vector2(1875, 907)
+texture = ExtResource("1_kbgvk")
+
+[node name="Label" type="Label" parent="WarriorYellow"]
+offset_left = 583.0
+offset_top = -705.0
+offset_right = 623.0
+offset_bottom = -682.0
+scale = Vector2(1.90267, 2.16087)
+text = "IDLE"
+
+[node name="Label9" type="Label" parent="WarriorYellow"]
+offset_left = -516.0
+offset_top = -857.0
+offset_right = -324.0
+offset_bottom = -834.0
+scale = Vector2(5.30916, 2.1121)
+text = "0      1       2      3       4       5"
+
+[node name="Label10" type="Label" parent="WarriorYellow"]
+offset_left = -605.0
+offset_top = -709.0
+offset_right = -593.0
+offset_bottom = -35.0
+scale = Vector2(5.30916, 2.1121)
+text = "0        1       2      3       4       5    6   7"
+label_settings = SubResource("LabelSettings_h02l3")
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="WarriorYellow"]
+offset_left = 590.0
+offset_top = -510.0
+offset_right = 630.0
+offset_bottom = -487.0
+scale = Vector2(1.90267, 2.16087)
+text = "RUN"
+
+[node name="Label3" type="Label" parent="WarriorYellow"]
+offset_left = 592.0
+offset_top = -324.0
+offset_right = 700.0
+offset_bottom = -301.0
+scale = Vector2(1.90267, 2.16087)
+text = "ATACK_SIDE_1"
+
+[node name="Label4" type="Label" parent="WarriorYellow"]
+offset_left = 596.0
+offset_top = -135.0
+offset_right = 704.0
+offset_bottom = -112.0
+scale = Vector2(1.90267, 2.16087)
+text = "ATACK_SIDE_2"
+
+[node name="Label5" type="Label" parent="WarriorYellow"]
+offset_left = 570.0
+offset_top = 62.0001
+offset_right = 737.0
+offset_bottom = 85.0001
+scale = Vector2(1.90267, 2.16087)
+text = "ATACK_SIDE_DOWN_1"
+
+[node name="Label6" type="Label" parent="WarriorYellow"]
+offset_left = 587.0
+offset_top = 262.0
+offset_right = 754.0
+offset_bottom = 285.0
+scale = Vector2(1.90267, 2.16087)
+text = "ATACK_SIDE_DOWN_2"
+
+[node name="Label7" type="Label" parent="WarriorYellow"]
+offset_left = 596.0
+offset_top = 449.0
+offset_right = 763.0
+offset_bottom = 472.0
+scale = Vector2(1.90267, 2.16087)
+text = "ATACK_SIDE_UP_1"
+
+[node name="Label8" type="Label" parent="WarriorYellow"]
+offset_left = 600.0
+offset_top = 648.0
+offset_right = 767.0
+offset_bottom = 671.0
+scale = Vector2(1.90267, 2.16087)
+text = "ATACK_SIDE_UP_2"
+
+[node name="Player" parent="." instance=ExtResource("2_pcc4f")]
+position = Vector2(576, 340)
+motion_mode = 1
+
+[node name="Pawn" parent="." instance=ExtResource("3_3i1l7")]
+position = Vector2(906, 348)
+
+[node name="Pawn2" parent="." instance=ExtResource("3_3i1l7")]
+position = Vector2(325, 399)
+
+[node name="Pawn3" parent="." instance=ExtResource("3_3i1l7")]
+position = Vector2(646, 446)

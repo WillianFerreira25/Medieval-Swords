@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cuswdbk77o1xg"]
+
+[ext_resource type="PackedScene" uid="uid://c0h43eqfhpoxb" path="res://Player/player.tscn" id="1_cyq42"]
+[ext_resource type="PackedScene" uid="uid://l2365xvkvmx3" path="res://ui/gameui.tscn" id="2_jy1e4"]
+[ext_resource type="PackedScene" uid="uid://vo1lu3ggj3gv" path="res://enemies/globin.tscn" id="3_u631x"]
+[ext_resource type="PackedScene" uid="uid://cqe7usy80r82o" path="res://misc/meet.tscn" id="4_138p6"]
+[ext_resource type="PackedScene" uid="uid://qj1w7j2bafsl" path="res://misc/Gold.tscn" id="5_kdj41"]
+
+[node name="TesteUi" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_cyq42")]
+position = Vector2(559, 350)
+
+[node name="Gameui" parent="." instance=ExtResource("2_jy1e4")]
+
+[node name="globin" parent="." instance=ExtResource("3_u631x")]
+position = Vector2(853, 339)
+
+[node name="meat" parent="." instance=ExtResource("4_138p6")]
+position = Vector2(1081, 574)
+
+[node name="meat2" parent="." instance=ExtResource("4_138p6")]
+position = Vector2(215, 584)
+
+[node name="Gold" parent="." instance=ExtResource("5_kdj41")]
+position = Vector2(186, 241)
+
+[node name="Gold2" parent="." instance=ExtResource("5_kdj41")]
+position = Vector2(378, 67)
+
+[node name="Gold3" parent="." instance=ExtResource("5_kdj41")]
+position = Vector2(687, 91)

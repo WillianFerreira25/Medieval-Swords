@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://cb3x3uchcpy7q"]
+
+[ext_resource type="PackedScene" uid="uid://c0h43eqfhpoxb" path="res://Player/player.tscn" id="1_1k2n1"]
+[ext_resource type="PackedScene" uid="uid://cqe7usy80r82o" path="res://misc/meet.tscn" id="2_6xd8j"]
+[ext_resource type="PackedScene" uid="uid://qj1w7j2bafsl" path="res://misc/Gold.tscn" id="3_e1r2c"]
+[ext_resource type="PackedScene" uid="uid://drubie58hfuq8" path="res://enemies/sheep.tscn" id="4_jpd3f"]
+
+[node name="Testmeat" type="Node2D"]
+position = Vector2(1, 1)
+
+[node name="meat" parent="." instance=ExtResource("2_6xd8j")]
+position = Vector2(788, 248)
+
+[node name="Player" parent="." instance=ExtResource("1_1k2n1")]
+position = Vector2(507, 418)
+
+[node name="Gold" parent="." instance=ExtResource("3_e1r2c")]
+position = Vector2(871, 363)
+
+[node name="sheep" parent="." instance=ExtResource("4_jpd3f")]
+position = Vector2(915, 518)

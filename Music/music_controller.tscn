@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyg2xdnmc4u70"]
+
+[ext_resource type="Script" path="res://Music/music_controller.gd" id="1_bx4ja"]
+[ext_resource type="AudioStream" uid="uid://1ef074yu1ny7" path="res://Music/Loop_The_Old_Tower_Inn.wav" id="1_ls20s"]
+
+[node name="MusicController" type="Node2D"]
+script = ExtResource("1_bx4ja")
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_ls20s")
+max_distance = 1e+06
